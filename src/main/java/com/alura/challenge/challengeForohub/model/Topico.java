@@ -1,5 +1,7 @@
 package com.alura.challenge.challengeForohub.model;
 
+import com.alura.challenge.challengeForohub.dto.DatosTopicoActualizado;
+import com.alura.challenge.challengeForohub.dto.DatosTopicoRegistrado;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -29,6 +31,21 @@ public class Topico {
     @Enumerated(EnumType.STRING)
     private Curso curso;
 
-    public Topico() {}
+    public Topico(DatosTopicoRegistrado datosTopicoRegistrado) {
+        this.titulo = datosTopicoRegistrado.titulo();
+        this.mensaje = datosTopicoRegistrado.mensaje();
+        this.fechaDeCreacion = LocalDateTime.now();
+        this.curso = datosTopicoRegistrado.curso();
+    }
+
+    public void actualizarInfo(DatosTopicoActualizado datosTopicoActualizado) {
+        if (datosTopicoActualizado.titulo() != null) {
+            this.titulo = datosTopicoActualizado.titulo();
+        }
+
+        if (datosTopicoActualizado.mensaje() != null) {
+            this.mensaje = datosTopicoActualizado.mensaje();
+        }
+    }
 
 }
