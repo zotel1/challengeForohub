@@ -1,6 +1,7 @@
 package com.alura.challenge.challengeForohub.controller;
 
 import com.alura.challenge.challengeForohub.dto.DatosAutenticacion;
+import com.alura.challenge.challengeForohub.dto.DatosTokenJWT;
 import com.alura.challenge.challengeForohub.infra.security.TokenService;
 import com.alura.challenge.challengeForohub.model.Usuario;
 import jakarta.validation.Valid;
@@ -28,6 +29,6 @@ public class AutenticacionController {
         var authenticationToken = new UsernamePasswordAuthenticationToken(datosAutenticacion.login(), datosAutenticacion.password());
         var autenticacion = authenticationManager.authenticate(authenticationToken);
         var tokenJWT = tokenService.generarToken((Usuario) autenticacion.getPrincipal());
-        return ResponseEntity.ok(new DatosTo)
+        return ResponseEntity.ok(new DatosTokenJWT(tokenJWT));
     }
 }

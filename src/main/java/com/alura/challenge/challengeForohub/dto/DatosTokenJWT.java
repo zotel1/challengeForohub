@@ -1,4 +1,4 @@
 package com.alura.challenge.challengeForohub.dto;
 
-public record DatosTokenJWT() {
+public record DatosTokenJWT(String token) {
 }
