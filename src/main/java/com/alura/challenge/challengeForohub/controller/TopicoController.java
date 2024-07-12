@@ -1,11 +1,11 @@
 package com.alura.challenge.challengeForohub.controller;
 
-import com.alura.challenge.challengeForohub.dto.DatosDetalleTopico;
-import com.alura.challenge.challengeForohub.dto.DatosTopicoActualizado;
-import com.alura.challenge.challengeForohub.dto.DatosTopicoListado;
-import com.alura.challenge.challengeForohub.dto.DatosTopicoRegistrado;
-import com.alura.challenge.challengeForohub.model.Topico;
-import com.alura.challenge.challengeForohub.repository.TopicoRepository;
+import com.alura.challenge.challengeForohub.domain.dto.DatosDetalleTopico;
+import com.alura.challenge.challengeForohub.domain.dto.DatosTopicoActualizado;
+import com.alura.challenge.challengeForohub.domain.dto.DatosTopicoListado;
+import com.alura.challenge.challengeForohub.domain.dto.DatosTopicoRegistrado;
+import com.alura.challenge.challengeForohub.domain.model.Topico;
+import com.alura.challenge.challengeForohub.domain.repository.TopicoRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.alura.challenge.challengeForohub.infra.security;
 
-import com.alura.challenge.challengeForohub.repository.UsuarioRepository;
+import com.alura.challenge.challengeForohub.domain.repository.UsuarioRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package com.alura.challenge.challengeForohub.model;
+package com.alura.challenge.challengeForohub.domain.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

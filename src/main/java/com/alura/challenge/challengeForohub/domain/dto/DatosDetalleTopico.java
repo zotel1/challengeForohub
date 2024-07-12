@@ -1,7 +1,7 @@
-package com.alura.challenge.challengeForohub.dto;
+package com.alura.challenge.challengeForohub.domain.dto;
 
-import com.alura.challenge.challengeForohub.model.Curso;
-import com.alura.challenge.challengeForohub.model.Topico;
+import com.alura.challenge.challengeForohub.domain.model.Curso;
+import com.alura.challenge.challengeForohub.domain.model.Topico;
 
 import java.time.LocalDateTime;
 

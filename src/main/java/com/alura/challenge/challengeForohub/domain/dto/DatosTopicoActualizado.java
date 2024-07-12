@@ -1,4 +1,4 @@
-package com.alura.challenge.challengeForohub.dto;
+package com.alura.challenge.challengeForohub.domain.dto;
 
 public record DatosTopicoActualizado(
         Long id,

@@ -1,6 +1,6 @@
 package com.alura.challenge.challengeForohub.infra.security;
 
-import com.alura.challenge.challengeForohub.model.Usuario;
+import com.alura.challenge.challengeForohub.domain.model.Usuario;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;

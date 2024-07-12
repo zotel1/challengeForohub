@@ -1,7 +1,7 @@
-package com.alura.challenge.challengeForohub.model;
+package com.alura.challenge.challengeForohub.domain.model;
 
-import com.alura.challenge.challengeForohub.dto.DatosTopicoActualizado;
-import com.alura.challenge.challengeForohub.dto.DatosTopicoRegistrado;
+import com.alura.challenge.challengeForohub.domain.dto.DatosTopicoActualizado;
+import com.alura.challenge.challengeForohub.domain.dto.DatosTopicoRegistrado;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

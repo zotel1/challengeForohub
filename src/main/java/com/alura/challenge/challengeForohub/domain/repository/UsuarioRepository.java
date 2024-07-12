@@ -1,6 +1,6 @@
-package com.alura.challenge.challengeForohub.repository;
+package com.alura.challenge.challengeForohub.domain.repository;
 
-import com.alura.challenge.challengeForohub.model.Usuario;
+import com.alura.challenge.challengeForohub.domain.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsuarioRepository extends JpaRepository <Usuario, Long > {

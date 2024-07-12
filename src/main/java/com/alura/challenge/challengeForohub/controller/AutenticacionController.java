@@ -1,9 +1,9 @@
 package com.alura.challenge.challengeForohub.controller;
 
-import com.alura.challenge.challengeForohub.dto.DatosAutenticacion;
-import com.alura.challenge.challengeForohub.dto.DatosTokenJWT;
+import com.alura.challenge.challengeForohub.domain.dto.DatosAutenticacion;
+import com.alura.challenge.challengeForohub.domain.dto.DatosTokenJWT;
 import com.alura.challenge.challengeForohub.infra.security.TokenService;
-import com.alura.challenge.challengeForohub.model.Usuario;
+import com.alura.challenge.challengeForohub.domain.model.Usuario;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
